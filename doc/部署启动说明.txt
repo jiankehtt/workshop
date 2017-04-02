@@ -1,0 +1,9 @@
+1、拷贝“doc/distributeIdServer”到指定的存放目录(可进行文件夹改名)。
+
+1、修改server.properties配置文件。
+    server.port：在本机供对外提供id生成器的端口
+    longid.id：生成器的id，数字在0<= x >=127之间，如果其他机器也使用了id生成器，则各个id生成器的该id不可重复
+    intid.file：指定int id生成器所使用的id文件前缀，不同的业务id产生的文件不相同，建议单独建立一个文件夹。
+    intid.file.watchtime：监控时间间隔
+
+2、 执行"java -jar distributeIdServer-0.0.1-SNAPSHOT-jar-with-dependencies.jar"即可完成启动。
