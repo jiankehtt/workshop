@@ -98,3 +98,9 @@
 [ERROR] [2017-04-02 11:25:54] com.rxtx.Main           97
 [ERROR] [2017-04-02 11:25:54] com.rxtx.Main           98
 [ERROR] [2017-04-02 11:25:54] com.rxtx.Main           99
+[ERROR] [2017-04-02 13:21:57] com.rxtx.utils.PropertyUtil  D:\chuankouworkspace\workshop2\config.properties (系统找不到指定的文件。)
+[ERROR] [2017-04-02 13:21:57] com.rxtx.db.JDBCUtils  Exception null
+[ERROR] [2017-04-02 13:23:55] com.rxtx.db.JDBCUtils  Exception Access denied for user 'slashui'@'61.148.202.6' (using password: YES)
+[DEBUG] [2017-04-02 13:25:54] com.rxtx.db.JDBCUtils  url jdbc:mysql://101.200.159.209:3306/workshop  slashui  Hsnjhmx0
+[ERROR] [2017-04-02 13:25:54] com.rxtx.db.JDBCUtils  Exception Access denied for user 'slashui'@'61.148.202.6' (using password: YES)
+[DEBUG] [2017-04-02 13:26:23] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0

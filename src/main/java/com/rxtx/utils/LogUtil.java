@@ -16,5 +16,6 @@ public class LogUtil {
 		String base = System.getProperty("user.dir");
 		base += "\\src\\main\\resource\\test";	// 用于debug
 		PropertyConfigurator.configure(base + File.separator + "log4j.properties");
+		
 	}
 }

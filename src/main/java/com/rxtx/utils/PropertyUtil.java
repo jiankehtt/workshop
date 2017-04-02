@@ -16,7 +16,7 @@ public class PropertyUtil {
 		// 加载属性文件
 		try {
 			String base = System.getProperty("user.dir");
-//			base += "\\src\\main\\resource";	// 用于debug
+			base += "\\src\\main\\resource\\test";	// 用于debug
 			InputStream inputStream = new FileInputStream(base + File.separator + "config.properties");
 			try {
 				properties = new Properties();

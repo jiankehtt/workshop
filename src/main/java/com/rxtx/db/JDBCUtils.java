@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.log4j.Logger;
+
 import com.rxtx.model.WsList;
 import com.rxtx.utils.LogUtil;
 import com.rxtx.utils.PropertyUtil;
@@ -18,6 +20,7 @@ public class JDBCUtils {
 	static Connection conn;
 	static PreparedStatement ps;
 	static ResultSet rs;
+	private static Logger logger = LogUtil.getLogger(JDBCUtils.class);
 
 	/**
 	 * 写一个连接数据库的方法
@@ -30,10 +33,10 @@ public class JDBCUtils {
 				userName = PropertyUtil.getProperty("dbuser");
 				password = PropertyUtil.getProperty("dbpasswd");
 			}
-			
+			logger.debug("url "+url+"  "+userName+"  "+ password);
 			conn = DriverManager.getConnection(url, userName, password);
 		} catch (Exception e) {
-			LogUtil.getLogger(JDBCUtils.class).error("Exception "+e.getMessage());
+			logger.error("Exception "+e.getMessage());
 		}
 		return conn;
 	}
@@ -165,6 +168,7 @@ public class JDBCUtils {
 	// return row;
 	// }
 	public static void main(String[] args) {
+		LogUtil.init();
 		JDBCUtils j = new JDBCUtils();
 		j.QuerySql();// 在控制台顯示出查找方法
 	}
