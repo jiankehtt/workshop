@@ -7,11 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.rxtx.model.WsList;
+import com.rxtx.utils.LogUtil;
+import com.rxtx.utils.PropertyUtil;
+import com.rxtx.utils.StringUtil;
 
 public class JDBCUtils {
-	private final static String url = "jdbc:mysql://101.200.159.209:3306/workshop";
-	private final static String userName = "hu";
-	private final static String password = "123456";
+	private  static String url = "";
+	private  static String userName = "";
+	private  static String password = "";
 	static Connection conn;
 	static PreparedStatement ps;
 	static ResultSet rs;
@@ -22,9 +25,15 @@ public class JDBCUtils {
 	public static Connection getConnection() {			
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+			if(StringUtil.isEmpty(url)){
+				url = PropertyUtil.getProperty("dburl");
+				userName = PropertyUtil.getProperty("dbuser");
+				password = PropertyUtil.getProperty("dbpasswd");
+			}
+			
 			conn = DriverManager.getConnection(url, userName, password);
 		} catch (Exception e) {
-			System.err.println("Exception "+e.getMessage());
+			LogUtil.getLogger(JDBCUtils.class).error("Exception "+e.getMessage());
 		}
 		return conn;
 	}
@@ -157,12 +166,6 @@ public class JDBCUtils {
 	// }
 	public static void main(String[] args) {
 		JDBCUtils j = new JDBCUtils();
-		// j.getConnection();
 		j.QuerySql();// 在控制台顯示出查找方法
-		// UserInfo u=new UserInfo();
-		// u.setUserId(5);
-		// u.setUserName("cool");
-		// u.setPassword("123abc");
-		// j.update(u);////在控制台顯示出修改方法
 	}
 }
