@@ -3,12 +3,16 @@ import gnu.io.*;
 import java.io.*; 
 import java.util.*;
 
+import org.apache.log4j.Logger;
+
 import com.rxtx.db.JDBCUtils;
-import com.rxtx.model.WsList;  
+import com.rxtx.model.WsList;
+import com.rxtx.utils.LogUtil;  
  
  
 public class SerialReader extends Observable implements Runnable,SerialPortEventListener
     {
+	private static Logger logger = LogUtil.getLogger(SerialReader.class);
     static CommPortIdentifier portId;
     int delayRead = 100;
     int numBytes; // buffer中的实际数据字节数
@@ -273,20 +277,8 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
         params.put( SerialReader.PARAMS_DELAY, 100 ); // 端口数据准备时间 1秒
         try {
 			open(params);//打开串口
-			//LoginFrame cf=new LoginFrame();
-			//addObserver(cf);
-			//也可以像上面一个通过LoginFrame来绑定串口的通讯输出.
-//			if(message!=null&&message.length()!=0)
-//			 {
-//				String str="";
-//				for(int i=0;i<10;i++)
-//				{
-//					str+=message;
-//				}
-//				 start(); 
-//			     run(str);  
-//			 } 
 		} catch (Exception e) { 
+			logger.error("open error"+e.getMessage());
 		}
     }
 

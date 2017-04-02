@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ConcurrentTaskExecutor implements TaskExecutor {
 
-    private static int kDefaultThreadPoolSize = 4;
+    private static int kDefaultThreadPoolSize = 10;
     private static int maxThreadPoolSize = 40;
     private static int kKeepAliveTime = 30;
     private static TimeUnit kTimeUnit = TimeUnit.SECONDS;

@@ -104,3 +104,7 @@
 [DEBUG] [2017-04-02 13:25:54] com.rxtx.db.JDBCUtils  url jdbc:mysql://101.200.159.209:3306/workshop  slashui  Hsnjhmx0
 [ERROR] [2017-04-02 13:25:54] com.rxtx.db.JDBCUtils  Exception Access denied for user 'slashui'@'61.148.202.6' (using password: YES)
 [DEBUG] [2017-04-02 13:26:23] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         s3
+[DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM1
+[DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM2
+[DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM51
