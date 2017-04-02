@@ -6,6 +6,7 @@ import java.util.*;
 import org.apache.log4j.Logger;
 
 import com.rxtx.db.JDBCUtils;
+import com.rxtx.logic.WorkLogic;
 import com.rxtx.model.WsList;
 import com.rxtx.model.creater.WsListCreater;
 import com.rxtx.utils.LogUtil;  
@@ -188,7 +189,7 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
             }
         }
     }
-    
+    WorkLogic logic = new WorkLogic();
     public void serialEvent( SerialPortEvent event )
     {
         try
@@ -220,7 +221,8 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
                      while (inputStream.available() > 0) {
                        numBytes = inputStream.read(readBuffer);
                      }
-                     JDBCUtils.add(WsListCreater.createWsList(HexUtils.bytesToHexString(readBuffer),port));
+                     logic.saveData(HexUtils.bytesToHexString(readBuffer), port);
+                     
                     logger.debug(" Port: "+port+"  ReadData: "+ HexUtils.bytesToHexString(readBuffer));
 //                    numBytes = inputStream.read( readBuffer );
                
