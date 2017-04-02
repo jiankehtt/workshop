@@ -291,3 +291,160 @@
 [DEBUG] [2017-04-02 17:50:38] com.rxtx.SerialReader   Port: COM51  ReadData: 8666f80660986678f8800680609e068018fe
 [DEBUG] [2017-04-02 17:50:39] com.rxtx.SerialReader   Port: COM51  ReadData: f8061e18fe6678f8800680609e0680fe8666
 [DEBUG] [2017-04-02 17:50:40] com.rxtx.SerialReader   Port: COM51  ReadData: 0660fe78f8800680609e06809e0680fe8666
+[DEBUG] [2017-04-02 18:05:01] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:01] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:02] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:05] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:08] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:09] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:11] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:12] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:13] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2005169650e01640120fa797198
+[DEBUG] [2017-04-02 18:05:16] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:17] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:18] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:18] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:19] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:20] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:21] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:23] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:24] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:05:25] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:21] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:22] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:22] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:24] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:25] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:26] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 18:06:26] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:27] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:06:28] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:21] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:22] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:22] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:23] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:24] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:25] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:26] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:27] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:28] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:29] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:12:30] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:06] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:07] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:07] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:07] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:08] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:09] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:09] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:10] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:10] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:11] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:11] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:12] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:12] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:12] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:13] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:14] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:14] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:14] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:15] com.rxtx.SerialReader  legth 1100ee00e2000015510600910660d5edfc22
+[DEBUG] [2017-04-02 18:13:16] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:41] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:13:41] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:42] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:13:42] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:43] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:13:43] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:13:44] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:13:44] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:45] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:45] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:46] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:46] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:47] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:47] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:48] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:48] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:48] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:49] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:49] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:50] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:51] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:51] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:52] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:52] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:53] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:53] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:54] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:54] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:55] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:55] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:56] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:56] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:57] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:57] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:58] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:58] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:14:59] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:14:59] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:00] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:00] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:01] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:01] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:02] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:02] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:03] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:03] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:04] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:04] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:05] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:05] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:06] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:06] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:07] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:07] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:15:08] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:15:08] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:01] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:02] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:02] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:03] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:03] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:03] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:04] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:04] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:05] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:05] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:06] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:06] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:07] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:07] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:08] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:08] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:09] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:09] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:10] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:10] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:11] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:11] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:14] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:14] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:15] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:15] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:15] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:16] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:16] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:16] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:17:17] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:17:18] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:22:11] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:22:11] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:22:12] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:22:12] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:22:13] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:22:13] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:22:14] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:22:14] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22
+[ERROR] [2017-04-02 18:22:15] com.rxtx.SerialReader  legth 36
+[DEBUG] [2017-04-02 18:22:15] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015510600910660d5edfc22

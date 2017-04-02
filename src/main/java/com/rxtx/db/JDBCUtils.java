@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -121,12 +122,12 @@ public class JDBCUtils {
 			conn = getConnection();// 连接数据库
 			ps = conn.prepareStatement(sql);// 2.创建Satement并设置参数
 			if(type==Constants.TYPE_REPAIR){
-				ps.setLong(1, ws.getRepairBeginTime());
+				ps.setTimestamp(1, new Timestamp(ws.getRepairBeginTime()));
 				ps.setString(2, ws.getRepairStationNo());
 			}
 			
 			if(type==Constants.TYPE_WASH){
-				ps.setLong(1, ws.getWashBeginTime());
+				ps.setTimestamp(1, new Timestamp(ws.getWashBeginTime()));
 				ps.setString(2, ws.getWashStationNo());
 			}
 			ps.setInt(3, ws.getTaskId());
