@@ -108,3 +108,128 @@
 [DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM1
 [DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM2
 [DEBUG] [2017-04-02 13:28:46] com.rxtx.Main         sCOM51
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM1
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM2
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM51
+[ERROR] [2017-04-02 14:52:11] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:52:12] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:52:12] com.rxtx.Main         ports COM51
+[DEBUG] [2017-04-02 14:54:21] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 14:54:22] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 14:54:23] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 14:54:24] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 14:54:25] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM51
+[DEBUG] [2017-04-02 15:01:22] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:23] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:24] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:25] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:26] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:27] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:28] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:29] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:30] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:31] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:32] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:33] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:34] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:35] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:36] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:37] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:38] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:39] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:40] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:41] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:42] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:43] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:01:44] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:51] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:51] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:51] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:51] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:52] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:52] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:53] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:53] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:54] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:54] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:55] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:55] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:05:56] com.rxtx.db.JDBCUtils  url jdbc:mysql://rdsi69139ukaez21448y.mysql.rds.aliyuncs.com/workshop  slashui  Hsnjhmx0
+[DEBUG] [2017-04-02 15:05:56] com.rxtx.SerialReader  Port:COM50ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:00] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:00] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:01] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:02] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:03] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:04] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:05] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:06] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:07] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:08] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:09] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:10] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:11] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:12] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:13] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:14] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:15] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:16] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:17] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:18] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:19] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:20] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:21] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:22] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:23] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:24] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:25] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:26] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:27] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:28] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:29] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:30] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:31] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:32] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:33] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:34] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:35] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:36] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:37] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:38] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:39] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:40] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:41] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:42] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:43] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:44] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:45] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:46] com.rxtx.SerialReader   Port: COM50  ReadData: 1100ee00e2000015271600751100a82ac967
+[DEBUG] [2017-04-02 15:07:54] com.rxtx.SerialReader   Port: COM51  ReadData: 18786080e6988686f87e9ef87e9e066018fe
+[DEBUG] [2017-04-02 15:07:55] com.rxtx.SerialReader   Port: COM51  ReadData: 18786018068686f87e9e86f87e9e066018fe
+[DEBUG] [2017-04-02 15:07:55] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:07:56] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:07:57] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe1878600686f87e9e7e9e066018fe
+[DEBUG] [2017-04-02 15:07:58] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe1878601806f87e9e7e9e066018fe
+[DEBUG] [2017-04-02 15:07:59] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:00] com.rxtx.SerialReader   Port: COM51  ReadData: 066066661806e6988686f87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:01] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe0686f87e9e86f87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:02] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018069ef87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:03] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:04] com.rxtx.SerialReader   Port: COM51  ReadData: 066080e6988686f87e9e86f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:05] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe187860988686f87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:06] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:07] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe78600686f87e9ef87e9e066018fe
+[DEBUG] [2017-04-02 15:08:08] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe187860180686f87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:09] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe187860f87e9ef87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:10] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018069ef87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:11] com.rxtx.SerialReader   Port: COM51  ReadData: 066060f87e9e6018069ef87e9e9e066018fe
+[DEBUG] [2017-04-02 15:08:12] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:13] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:14] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe187860e6988686f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:15] com.rxtx.SerialReader   Port: COM51  ReadData: 0660fe78600686f87e9e86f87e9e066018fe
+[DEBUG] [2017-04-02 15:08:16] com.rxtx.SerialReader   Port: COM51  ReadData: 066018fe18786018068686f87e9e066018fe

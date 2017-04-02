@@ -12,12 +12,12 @@ public class Main {
 	static Logger logger = LogUtil.getLogger(Main.class);
 	public static void main(String[] args) {
 		LogUtil.init();
-		
+
 		SerialReader r = new SerialReader();
-		List<String> ports = r.findPort();
-		for(String s: ports){
-			r.openSerialPort(s);
-			
+		final List<String> ports = r.findPort();
+		for(final String port:ports){
+			SerialReader w = new SerialReader();
+			w.openSerialPort(port);
 		}
 	}
 }

@@ -102,3 +102,14 @@
 [ERROR] [2017-04-02 13:21:57] com.rxtx.db.JDBCUtils  Exception null
 [ERROR] [2017-04-02 13:23:55] com.rxtx.db.JDBCUtils  Exception Access denied for user 'slashui'@'61.148.202.6' (using password: YES)
 [ERROR] [2017-04-02 13:25:54] com.rxtx.db.JDBCUtils  Exception Access denied for user 'slashui'@'61.148.202.6' (using password: YES)
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM1
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM2
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:51:13] com.rxtx.Main         ports COM51
+[ERROR] [2017-04-02 14:52:11] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:52:12] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:52:12] com.rxtx.Main         ports COM51
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM5
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM50
+[ERROR] [2017-04-02 14:54:49] com.rxtx.Main         ports COM51

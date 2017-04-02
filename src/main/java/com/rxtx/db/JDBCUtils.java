@@ -33,7 +33,6 @@ public class JDBCUtils {
 				userName = PropertyUtil.getProperty("dbuser");
 				password = PropertyUtil.getProperty("dbpasswd");
 			}
-			logger.debug("url "+url+"  "+userName+"  "+ password);
 			conn = DriverManager.getConnection(url, userName, password);
 		} catch (Exception e) {
 			logger.error("Exception "+e.getMessage());

@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 
 import com.rxtx.db.JDBCUtils;
 import com.rxtx.model.WsList;
+import com.rxtx.model.creater.WsListCreater;
 import com.rxtx.utils.LogUtil;  
  
  
@@ -33,6 +34,8 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
     public static final String PARAMS_STOPBITS = "stop bits"; // 停止位
     public static final String PARAMS_PARITY = "parity"; // 奇偶校验
     public static final String PARAMS_RATE = "rate"; // 波特率
+    
+    private String port;
 
     public boolean isOpen(){
     	return isOpen;
@@ -217,21 +220,15 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
                      while (inputStream.available() > 0) {
                        numBytes = inputStream.read(readBuffer);
                      }
-                     
-                     
-                     WsList ws = new WsList();
-                     ws.setGuid(UUID.randomUUID().toString());
-                     ws.setRfid(HexUtils.bytesToHexString(readBuffer));
-                     ws.setComport("Com51");
-                     JDBCUtils.add(ws);
-                     System.out.println(" readBuffer "+HexUtils.bytesToHexString(readBuffer));
+                     JDBCUtils.add(WsListCreater.createWsList(HexUtils.bytesToHexString(readBuffer),port));
+                    logger.debug(" Port: "+port+"  ReadData: "+ HexUtils.bytesToHexString(readBuffer));
 //                    numBytes = inputStream.read( readBuffer );
                
                     changeMessage( readBuffer, numBytes );
                 }
                 catch ( IOException e )
                 {
-                    e.printStackTrace();
+                   logger.error("error seril event "+e.getMessage());
                 }
                 break;
         }
@@ -262,7 +259,8 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
     public void openSerialPort(String port)
     {
         HashMap<String, Comparable> params = new HashMap<String, Comparable>();  
-//        String port="COM51";
+//        String port="COM51"
+        this.port = port;
         String rate = "9600";
         String dataBit = ""+SerialPort.DATABITS_8;
         String stopBit = ""+SerialPort.STOPBITS_1;
