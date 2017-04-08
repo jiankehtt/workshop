@@ -222,12 +222,13 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
                        numBytes = inputStream.read(readBuffer);
                      }
                      String rfid = HexUtils.bytesToHexString(readBuffer);
-                     logger.error("legth "+ rfid.length());
+                     logger.error("legth "+ rfid.length()+"----"+rfid);
                      if(rfid.length()==36){//如果长度为36个字节，取中间
                     	 rfid = rfid.substring(8, 32).toUpperCase();
                      }
+                     logger.error("legth "+ rfid.length()+"----"+rfid);
                      logic.saveData(rfid, port);
-                    logger.debug(" Port: "+port+"  ReadData: "+ HexUtils.bytesToHexString(readBuffer));
+                   // logger.debug(" Port: "+port+"  ReadData: "+ HexUtils.bytesToHexString(readBuffer));
 //                    numBytes = inputStream.read( readBuffer );
                
                     changeMessage( readBuffer, numBytes );

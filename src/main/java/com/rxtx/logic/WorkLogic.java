@@ -22,6 +22,7 @@ public class WorkLogic {
 	public void saveData(String rfid, String port) {
 		int type = checkType(port);
 		List<WsTask> wsTasks = JDBCUtils.getWsTasks(rfid, type);
+		int taskid = 0;
 		if (wsTasks != null && wsTasks.size() > 0) {
 			WsTask ws = wsTasks.get(0);
 
@@ -30,14 +31,16 @@ public class WorkLogic {
 				ws.setRepairBeginTime(System.currentTimeMillis());
 			}
 			if (type == Constants.TYPE_WASH) {
-				ws.setWaitBeginTime(System.currentTimeMillis());
-				ws.setWaitStationNo(port);
+				ws.setWashBeginTime(System.currentTimeMillis());
+				ws.setWashStationNo(port);
 			}
-
+			taskid = wsTasks.get(0).getTaskId();
 			JDBCUtils.update(wsTasks.get(0), type);
+		}else{
+			logger.error("wsTasks  :"+wsTasks==null? "null":wsTasks.size());
 		}
 
-		JDBCUtils.add(WsListCreater.createWsList(rfid, port));
+		JDBCUtils.add(WsListCreater.createWsList(rfid, port,taskid));
 	}
 
 	private int checkType(String port) {

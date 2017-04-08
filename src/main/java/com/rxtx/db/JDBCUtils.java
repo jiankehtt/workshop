@@ -55,6 +55,7 @@ public class JDBCUtils {
 		}
 		String sql = "select * from ws_tasks where  rf_id = '" + rfid + "' and task_end_time is null  and " + q;
 		List<WsTask> wsTasks = new ArrayList<WsTask>();
+		logger.debug("sql  : "+sql);
 		try {
 			conn = getConnection();// 连接数据库
 			ps = conn.prepareStatement(sql);// 2.创建Satement并设置参数
@@ -85,13 +86,15 @@ public class JDBCUtils {
 	}
 
 	public static void add(WsList wsList) {
-		String sql = "insert into ws_list(guid,rfid,comPort) values(?,?,?)";
+		String sql = "insert into ws_list(guid,rfid,comPort,task_id) values(?,?,?,?)";
 		try {
 			conn = getConnection();// 连接数据库
 			ps = conn.prepareStatement(sql);// 2.创建Satement并设置参数
 			ps.setString(1, wsList.getGuid());
 			ps.setString(2, wsList.getRfid());
 			ps.setString(3, wsList.getComport());
+			ps.setInt(4, wsList.getTaskId());
+			
 			// 4.处理结果集
 			ps.executeUpdate();
 		} catch (SQLException e) {
@@ -125,17 +128,18 @@ public class JDBCUtils {
 				ps.setTimestamp(1, new Timestamp(ws.getRepairBeginTime()));
 				ps.setString(2, ws.getRepairStationNo());
 			}
-			
 			if(type==Constants.TYPE_WASH){
 				ps.setTimestamp(1, new Timestamp(ws.getWashBeginTime()));
 				ps.setString(2, ws.getWashStationNo());
 			}
 			ps.setInt(3, ws.getTaskId());
+			
 			// 4.处理结果集
 			row = ps.executeUpdate();
-			System.out.println(row);
+			logger.error("update  --"+row+"  "+sql+"  "+type);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error("update  --"+row+"  "+sql+"  ");
+			
 		} finally {
 			// 释放资源
 			try {

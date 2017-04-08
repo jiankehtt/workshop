@@ -10,6 +10,8 @@ public class WsList {
     private String comport;
 
     private Date addtime;
+    
+    private int taskId;
 
 
     public String getGuid() {
@@ -43,5 +45,15 @@ public class WsList {
     public void setAddtime(Date addtime) {
         this.addtime = addtime;
     }
+
+	public int getTaskId() {
+		return taskId;
+	}
+
+	public void setTaskId(int taskId) {
+		this.taskId = taskId;
+	}
+    
+    
 
 }
