@@ -1,0 +1,72 @@
+package com.rxtx.db;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+
+import com.rxtx.model.WsPort;
+import com.rxtx.utils.LogUtil;
+
+public class WsPortDb {
+	
+	/***
+	 * 获取端口列表
+	 * @return
+	 */
+	public static Map<String, WsPort> getWsPorts() {
+		String sql = "select * from ws_ports ";
+		List<WsPort> wsPorts = new ArrayList<WsPort>();
+		Connection conn = null;
+		ResultSet rs = null;
+		Map<String, WsPort> ports = new HashMap<String, WsPort>();
+		try {
+			conn = JDBCUtils.getConnection();// 连接数据库
+			rs = conn.createStatement().executeQuery(sql); // 3.ִ执行SQL语句
+			WsPort ws = null;
+			// 4.处理结果集
+			while (rs.next()) {
+				ws = new WsPort();
+				ws.setId(rs.getInt("id"));
+				ws.setPortName(rs.getString("port_name"));
+				ws.setPortType(rs.getInt("port_type"));
+				ws.setPortSerial(rs.getString("port_serial"));
+				wsPorts.add(ws);
+			}
+			
+			for(WsPort port : wsPorts){
+				ports.put(port.getPortName(), port);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// 释放资源
+			try {
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return ports;
+	}
+
+	
+	public static void main(String[] args) {
+		WsPortDb db = new WsPortDb();
+	   Map<String, WsPort>	 wsPorts = db.getWsPorts();
+	   LogUtil.init();
+	   Logger log = LogUtil.getLogger(WsPortDb.class);
+	   
+	   for(Map.Entry<String, WsPort> entry : wsPorts.entrySet()){
+		   log.error("  data "+ entry.getValue().getPortName());
+	   }
+	}
+
+}
