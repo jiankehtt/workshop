@@ -57,6 +57,7 @@
 
 	<build>  
         <!--<finalName>...</finalName>-->  
+        <defaultGoal>compile</defaultGoal>
         <sourceDirectory>src/main/java</sourceDirectory>  
         <resources>  
             <!-- 控制资源文件的拷贝 -->  
@@ -71,6 +72,7 @@
             <plugin>  
                 <groupId>org.apache.maven.plugins</groupId>  
                 <artifactId>maven-compiler-plugin</artifactId>  
+                <version>2.3.2</version>
                 <configuration>  
                     <source>1.6</source>
                     <target>1.6</target>  
@@ -100,7 +102,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.up366.distributeid.server.ServerMain</mainClass>
+                            <mainClass>com.rxtx.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
