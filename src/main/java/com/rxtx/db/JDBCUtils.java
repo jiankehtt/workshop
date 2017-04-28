@@ -116,9 +116,9 @@ public class JDBCUtils {
 	public static int update(WsTask ws,int type) {
 		int row = 0;
 		
-		String sql = "update ws_tasks set repair_begin_time=?,repair_station_no=? where task_id=?";
+		String sql = "update ws_tasks set repair_begin_time=?,repair_station_no=?,task_status = 2  where task_id=?";
 		if(type==2){
-			sql = "update ws_tasks set wash_begin_time=?,wash_station_no=? where task_id=?";
+			sql = "update ws_tasks set wash_begin_time=?,wash_station_no=?,task_status = 4 where task_id=?";
 		}
 		
 		try {

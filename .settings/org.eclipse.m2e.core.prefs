@@ -1,4 +1,4 @@
-activeProfiles=
+activeProfiles=localhost, test, demo, demo-gaojiao, product, product-up366
 eclipse.preferences.version=1
 resolveWorkspaceProjects=true
 version=1
