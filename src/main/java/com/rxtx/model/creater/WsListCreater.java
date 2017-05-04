@@ -11,6 +11,7 @@ public class WsListCreater {
           ws.setRfid(rfid);
           ws.setComport(port);
           ws.setTaskId(taskid);
+          ws.setAddtime(System.currentTimeMillis());
           return ws;
 	}
 }

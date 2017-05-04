@@ -1,5 +1,7 @@
 package com.rxtx.model;
 
+import com.rxtx.comm.Constants;
+
 public class WsPort {
 	private int id;
 	private String portName;
@@ -20,8 +22,13 @@ public class WsPort {
 	public int getPortType() {
 		return portType;
 	}
-	public void setPortType(int portType) {
-		this.portType = portType;
+	public void setPortType(String portType) {
+		if("REPAIR".equals(portType)){
+			this.portType =  Constants.TYPE_REPAIR;
+		}
+		if("WASH".equals(portType)){
+			this.portType = Constants.TYPE_WASH;
+		}
 	}
 	public String getPortSerial() {
 		return portSerial;

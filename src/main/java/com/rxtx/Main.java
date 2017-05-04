@@ -17,6 +17,7 @@ public class Main {
 		final List<String> ports = r.findPort();
 		for(final String port:ports){
 			SerialReader w = new SerialReader();
+			logger.debug("open port "+port);
 			w.openSerialPort(port);
 		}
 	}

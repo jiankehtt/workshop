@@ -222,15 +222,12 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
                        numBytes = inputStream.read(readBuffer);
                      }
                      String rfid = HexUtils.bytesToHexString(readBuffer);
-                     logger.error("legth "+ rfid.length()+"----"+rfid);
+                     logger.debug("legth "+ rfid.length()+"----"+rfid);
                      if(rfid.length()==36){//如果长度为36个字节，取中间
                     	 rfid = rfid.substring(8, 32).toUpperCase();
                      }
-                     logger.error("legth "+ rfid.length()+"----"+rfid);
+                     logger.debug("legth "+ rfid.length()+"----"+rfid);
                      logic.saveData(rfid, port);
-                   // logger.debug(" Port: "+port+"  ReadData: "+ HexUtils.bytesToHexString(readBuffer));
-//                    numBytes = inputStream.read( readBuffer );
-               
                     changeMessage( readBuffer, numBytes );
                 }
                 catch ( IOException e )
@@ -246,9 +243,9 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
     public void changeMessage( byte[] message, int length )
     {
         setChanged();
-        byte[] temp = new byte[length];
-        System.arraycopy( message, 0, temp, 0, length );
-        notifyObservers( temp );
+//        byte[] temp = new byte[length];
+//        System.arraycopy( message, 0, temp, 0, length );
+//        notifyObservers( temp );
     }
 
     static void listPorts()
@@ -283,7 +280,7 @@ public class SerialReader extends Observable implements Runnable,SerialPortEvent
         try {
 			open(params);//打开串口
 		} catch (Exception e) { 
-			logger.error("open error"+e.getMessage());
+			logger.error("open error, port"+port+"  "+e.getMessage());
 		}
     }
 

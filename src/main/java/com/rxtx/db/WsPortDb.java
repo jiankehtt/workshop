@@ -20,7 +20,7 @@ public class WsPortDb {
 	 * @return
 	 */
 	public static Map<String, WsPort> getWsPorts() {
-		String sql = "select * from ws_ports ";
+		String sql = "select * from ws_com_ports ";
 		List<WsPort> wsPorts = new ArrayList<WsPort>();
 		Connection conn = null;
 		ResultSet rs = null;
@@ -32,10 +32,10 @@ public class WsPortDb {
 			// 4.处理结果集
 			while (rs.next()) {
 				ws = new WsPort();
-				ws.setId(rs.getInt("id"));
-				ws.setPortName(rs.getString("port_name"));
-				ws.setPortType(rs.getInt("port_type"));
-				ws.setPortSerial(rs.getString("port_serial"));
+				ws.setId(rs.getInt("com_port_id"));
+				ws.setPortName(rs.getString("com_port_no"));
+				ws.setPortType(rs.getString("com_port_type"));
+				ws.setPortSerial(rs.getString("com_port_serial"));
 				wsPorts.add(ws);
 			}
 			

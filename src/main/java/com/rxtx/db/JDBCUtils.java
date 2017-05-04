@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -53,7 +54,7 @@ public class JDBCUtils {
 		if (type == 2) {
 			q = "wash_station_no  is null";
 		}
-		String sql = "select * from ws_tasks where  rf_id = '" + rfid + "' and task_end_time is null  and " + q;
+		String sql = "select * from ws_tasks where  rfid like '%" + rfid + "%' and task_end_time is null  and " + q;
 		List<WsTask> wsTasks = new ArrayList<WsTask>();
 		logger.debug("sql  : "+sql);
 		try {
@@ -65,12 +66,11 @@ public class JDBCUtils {
 			while (rs.next()) {
 				ws = new WsTask();
 				ws.setTaskId(rs.getInt("task_id"));
-				ws.setRfId(rs.getString("rf_id"));
+				ws.setRfId(rs.getString("rfid"));
 				wsTasks.add(ws);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.error("getWsTasks error 1 "+ps.toString()+" Ex: "+e.getMessage());
 		} finally {
 			// 释放资源
 			try {
@@ -78,33 +78,33 @@ public class JDBCUtils {
 				ps.close();
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				logger.error("getWsTasks error 2 "+ps.toString()+" Ex: "+e.getMessage());
 			}
 		}
 		return wsTasks;
 	}
 
-	public static void add(WsList wsList) {
-		String sql = "insert into ws_list(guid,rfid,comPort,task_id) values(?,?,?,?)";
+	public static void add(Set<WsList> wsLists) {
+		String sql = "insert into ws_logs(rfid,com_port_no,task_id,created_at) values(?,?,?,?)";
 		try {
 			conn = getConnection();// 连接数据库
 			ps = conn.prepareStatement(sql);// 2.创建Satement并设置参数
-			ps.setString(1, wsList.getGuid());
-			ps.setString(2, wsList.getRfid());
-			ps.setString(3, wsList.getComport());
-			ps.setInt(4, wsList.getTaskId());
-			
-			// 4.处理结果集
-			ps.executeUpdate();
+			for(WsList ws : wsLists){
+				ps.setString(1, ws.getRfid());
+				ps.setString(2, ws.getComport());
+				ps.setInt(3, ws.getTaskId());
+				ps.setTimestamp(4,  new Timestamp(ws.getAddtime()) );
+				// 4.处理结果集
+				ps.executeUpdate();
+			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error("add WsList error "+ps.toString()+" Ex: "+e.getMessage());
 		} finally {
 			try {
 				ps.close();
 				conn.close();
 			} catch (SQLException e) {
-				e.printStackTrace();
+				logger.error("add WsList SQLException "+ps.toString()+" Ex: "+e.getMessage());
 			}
 
 		}
@@ -118,7 +118,7 @@ public class JDBCUtils {
 		
 		String sql = "update ws_tasks set repair_begin_time=?,repair_station_no=?,task_status = 2  where task_id=?";
 		if(type==2){
-			sql = "update ws_tasks set wash_begin_time=?,wash_station_no=?,task_status = 4 where task_id=?";
+			sql = "update ws_tasks set wash_begin_time=?,wash_station_no=?,task_status = 3 where task_id=?";
 		}
 		
 		try {
@@ -136,9 +136,8 @@ public class JDBCUtils {
 			
 			// 4.处理结果集
 			row = ps.executeUpdate();
-			logger.error("update  --"+row+"  "+sql+"  "+type);
 		} catch (SQLException e) {
-			logger.error("update  --"+row+"  "+sql+"  ");
+			logger.error("update WsTask error 1  --"+row+"  "+ps.toString()+"  "+type);
 			
 		} finally {
 			// 释放资源
@@ -147,46 +146,12 @@ public class JDBCUtils {
 				ps.close();
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				logger.error("update WsTask error 2  --"+row+"  "+ps.toString()+"  "+type);
 			}
 		}
 		return row;
 	}
 
-	// /**
-	// * @return删除操作
-	// */
-	// public int delete(UserInfo user){
-	// UserInfo u;
-	// int row=0;
-	//// j.Connection();
-	// String sql="delete from userInfo where userId=?";
-	// try {
-	// conn=getConnection();//连接数据库
-	// ps=conn.prepareStatement(sql);// 2.创建Satement并设置参数
-	//// rs=ps.executeQuery(sql); // 3.ִ执行SQL语句,緊緊用于查找語句
-	// //sql語句中寫了幾個字段，下面就必須要有幾個字段
-	// ps.setInt(1, user.getUserId());
-	// // 4.处理结果集
-	// row=ps.executeUpdate();
-	// System.out.println(row);
-	// } catch (SQLException e) {
-	// // TODO Auto-generated catch block
-	// e.printStackTrace();
-	// }finally{
-	// //释放资源【執行完sql要記得釋放資源】
-	// try {
-	//// rs.close();
-	// ps.close();
-	// conn.close();
-	// } catch (SQLException e) {
-	// // TODO Auto-generated catch block
-	// e.printStackTrace();
-	// }
-	// }
-	// return row;
-	// }
 	public static void main(String[] args) {
 		LogUtil.init();
 		JDBCUtils j = new JDBCUtils();

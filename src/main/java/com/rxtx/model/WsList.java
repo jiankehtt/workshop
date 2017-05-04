@@ -9,7 +9,7 @@ public class WsList {
 
     private String comport;
 
-    private Date addtime;
+    private long addtime;
     
     private int taskId;
 
@@ -38,11 +38,11 @@ public class WsList {
         this.comport = comport == null ? null : comport.trim();
     }
 
-    public Date getAddtime() {
+    public long getAddtime() {
         return addtime;
     }
 
-    public void setAddtime(Date addtime) {
+    public void setAddtime(long addtime) {
         this.addtime = addtime;
     }
 
