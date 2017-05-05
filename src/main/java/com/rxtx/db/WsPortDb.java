@@ -8,10 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
-
 import com.rxtx.model.WsPort;
-import com.rxtx.utils.LogUtil;
 
 public class WsPortDb {
 	
@@ -55,18 +52,6 @@ public class WsPortDb {
 			}
 		}
 		return ports;
-	}
-
-	
-	public static void main(String[] args) {
-		WsPortDb db = new WsPortDb();
-	   Map<String, WsPort>	 wsPorts = db.getWsPorts();
-	   LogUtil.init();
-	   Logger log = LogUtil.getLogger(WsPortDb.class);
-	   
-	   for(Map.Entry<String, WsPort> entry : wsPorts.entrySet()){
-		   log.error("  data "+ entry.getValue().getPortName());
-	   }
 	}
 
 }

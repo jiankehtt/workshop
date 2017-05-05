@@ -1,7 +1,6 @@
 package com.rxtx.db;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,14 +14,11 @@ import org.apache.log4j.Logger;
 import com.rxtx.comm.Constants;
 import com.rxtx.model.WsList;
 import com.rxtx.model.WsTask;
+import com.rxtx.utils.C3P0JdbcUtil;
 import com.rxtx.utils.LogUtil;
-import com.rxtx.utils.PropertyUtil;
-import com.rxtx.utils.StringUtil;
 
 public class JDBCUtils {
-	private static String url = "";
-	private static String userName = "";
-	private static String password = "";
+	
 	static Connection conn;
 	static PreparedStatement ps;
 	static ResultSet rs;
@@ -32,18 +28,7 @@ public class JDBCUtils {
 	 * 写一个连接数据库的方法
 	 */
 	public static Connection getConnection() {
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			if (StringUtil.isEmpty(url)) {
-				url = PropertyUtil.getProperty("dburl");
-				userName = PropertyUtil.getProperty("dbuser");
-				password = PropertyUtil.getProperty("dbpasswd");
-			}
-			conn = DriverManager.getConnection(url, userName, password);
-		} catch (Exception e) {
-			logger.error("Exception " + e.getMessage());
-		}
-		return conn;
+		return C3P0JdbcUtil.getConnection();
 	}
 
 	/**
@@ -72,14 +57,7 @@ public class JDBCUtils {
 		} catch (SQLException e) {
 			logger.error("getWsTasks error 1 "+ps.toString()+" Ex: "+e.getMessage());
 		} finally {
-			// 释放资源
-			try {
-				rs.close();
-				ps.close();
-				conn.close();
-			} catch (SQLException e) {
-				logger.error("getWsTasks error 2 "+ps.toString()+" Ex: "+e.getMessage());
-			}
+			C3P0JdbcUtil.release(conn, ps, rs);
 		}
 		return wsTasks;
 	}
@@ -100,13 +78,7 @@ public class JDBCUtils {
 		} catch (SQLException e) {
 			logger.error("add WsList error "+ps.toString()+" Ex: "+e.getMessage());
 		} finally {
-			try {
-				ps.close();
-				conn.close();
-			} catch (SQLException e) {
-				logger.error("add WsList SQLException "+ps.toString()+" Ex: "+e.getMessage());
-			}
-
+			C3P0JdbcUtil.release(conn, ps, rs);
 		}
 	}
 
@@ -140,20 +112,9 @@ public class JDBCUtils {
 			logger.error("update WsTask error 1  --"+row+"  "+ps.toString()+"  "+type);
 			
 		} finally {
-			// 释放资源
-			try {
-				// rs.close();
-				ps.close();
-				conn.close();
-			} catch (SQLException e) {
-				logger.error("update WsTask error 2  --"+row+"  "+ps.toString()+"  "+type);
-			}
+			C3P0JdbcUtil.release(conn, ps, rs);
 		}
 		return row;
 	}
 
-	public static void main(String[] args) {
-		LogUtil.init();
-		JDBCUtils j = new JDBCUtils();
-	}
 }

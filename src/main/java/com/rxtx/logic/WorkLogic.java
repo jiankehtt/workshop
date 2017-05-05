@@ -1,7 +1,5 @@
 package com.rxtx.logic;
 
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -28,7 +26,6 @@ public class WorkLogic {
 	
 	volatile static Set<WsList>  wsLists = new HashSet <>();
 	volatile static Set<WsList> temList = new HashSet<>();
-    int taskid = 0;
     
     static {
     	Timer timer = new Timer();
@@ -45,6 +42,8 @@ public class WorkLogic {
     }
     
     
+    private static Map<String,Integer> taskMap = new HashMap<>(); 
+    
 	public void saveData(String rfid, String port) {
 		int type = checkType(port);
 		List<WsTask> wsTasks = JDBCUtils.getWsTasks(rfid, type);
@@ -59,13 +58,14 @@ public class WorkLogic {
 				ws.setWashBeginTime(System.currentTimeMillis());
 				ws.setWashStationNo(port);
 			}
-			taskid = wsTasks.get(0).getTaskId();
+			int taskid = wsTasks.get(0).getTaskId();
+			taskMap.put(rfid, taskid);
 			JDBCUtils.update(wsTasks.get(0), type);
 		}else{
 			logger.error("wsTasks  :"+wsTasks==null? "null":wsTasks.size());
 		}
 	
-		wsLists.add(WsListCreater.createWsList(rfid, port,taskid));
+		wsLists.add(WsListCreater.createWsList(rfid, port,taskMap.get(rfid)==null?0:taskMap.get(rfid)));
 	}
 
 	private int checkType(String port) {
